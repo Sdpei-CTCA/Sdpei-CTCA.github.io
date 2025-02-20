@@ -8,12 +8,14 @@
 <head>
   <meta charset="UTF-8">
 
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/TLlogo.png">
-  <link rel="icon" href="/img/TLlogo.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/TLlogo.webp">
+  <link rel="icon" href="/img/TLlogo.webp">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   
   <meta name="theme-color" content="#2f4154">
   <meta name="author" content="Aya Ning">
@@ -94,11 +96,14 @@
     
 
 <div class="header-inner" style="height: 70vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <head>
+  <link rel="preload" href="/img/TLlogo.webp" as="image">
+</head>
+<nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
       
-        <img src="/img/TLlogo.png" srcset="/img/loading.gif" lazyload alt="Logo" style="height: 50px; width: auto; margin-right: 10px;">
+        <img src="/img/TLlogo.webp" srcset="/img/loading.gif" lazyload alt="Logo" style="height: 50px; width: auto; margin-right: 10px;">
       
       <strong>山东体育学院计算机技术交流玩机社</strong>
     </a>
@@ -454,7 +459,8 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <br> <i class="iconfont icon-github-fill"></i> <a href="https://github.com/Sdpei-CTCA" target="_blank" rel="nofollow noopener"><span>Sdpei-CTCA</span></a> 
+       <i class="iconfont icon-github-fill"></i> <a href="https://github.com/Sdpei-CTCA" target="_blank" rel="nofollow noopener"><span>Sdpei-CTCA</span></a> <br> <span>社团地址:山东体育学院济南校区一号教学楼1615</span>  <br> <span>校内链接:</span> <a href="https://www.sdpei.edu.cn" target="_blank" rel="nofollow noopener"><span>山东体育学院 </span></a> <a href="https://cmxy.sdpei.edu.cn" target="_blank" rel="nofollow noopener"><span>体育传媒与信息技术学院 </span></a> <a href="https://nic.sdpei.edu.cn" target="_blank" rel="nofollow noopener"><span>网络信息中心 </span></a> <br> <i class="iconfont icon-love"></i> <span>由</span> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <span>与</span> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <span>强力驱动</span>
+
     </div>
   
   
