@@ -1,307 +1,152 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2024年全国普通高校学科竞赛排行榜榜单解读（持续更新） | 山东体育学院CTCA玩机社</title><noscript>开启JavaScript才能访问本站哦~</noscript><link rel="icon" href="/img/pwa/favicon.png"><link rel="stylesheet" href="/css/index.css?v=3.0.21"><link rel="canonical" href="http://sdpei-ctca.github.io/posts/fda6550/index.html"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"><!-- Feature-specific CSS--><!-- aplayer--><!-- swiper--><!-- fancybox ui--><!-- katex--><!-- Open Graph--><meta name="description" content="概述（阅前必读）以下内容针对我院同学个人学习能力、学习时长、赛事难易程度、赛事预计参与人数等方面，对《2024年全国普通高校学科竞赛排行榜榜单》进行解读，对于各学科的赛事，进行资料梳理，提供相应建议与学习资料。与数据科学与大数据技术或智能体育工程专业的学习内容相差很大的学科，将排在稍后位置。同时会针"><!-- pwa--><meta name="apple-mobile-web-app-capable" content="山东体育学院CTCA玩机社"><meta name="theme-color" content="var(--efu-main)"><meta name="apple-mobile-web-app-status-bar-style" content="var(--efu-main)"><link rel="bookmark" href="/img/pwa/favicon.png"><link rel="apple-touch-icon" href="/img/pwa/favicon.png" sizes="180x180"><script>console.log(' %c Solitude %c ' + '3.0.21' + ' %c https://github.com/everfu/hexo-theme-solitude',
+    'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+    'background:#ff9a9a ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+    'background:unset ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff')
+</script><script>(()=>{
+        const saveToLocal = {
+            set: function setWithExpiry(key, value, ttl) {
+                if (ttl === 0)
+                    return
+                const now = new Date()
+                const expiryDay = ttl * 86400000
+                const item = {
+                    value: value,
+                    expiry: now.getTime() + expiryDay
+                }
+                localStorage.setItem(key, JSON.stringify(item))
+            },
+            get: function getWithExpiry(key) {
+                const itemStr = localStorage.getItem(key)
 
+                if (!itemStr) {
+                    return undefined
+                }
+                const item = JSON.parse(itemStr)
+                const now = new Date()
 
-<!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
+                if (now.getTime() > item.expiry) {
+                    localStorage.removeItem(key)
+                    return undefined
+                }
+                return item.value
+            }
+        };
+        window.utils = {
+            saveToLocal: saveToLocal,
+            getCSS: (url, id = false) => new Promise((resolve, reject) => {
+              const link = document.createElement('link')
+              link.rel = 'stylesheet'
+              link.href = url
+              if (id) link.id = id
+              link.onerror = reject
+              link.onload = link.onreadystatechange = function() {
+                const loadState = this.readyState
+                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                link.onload = link.onreadystatechange = null
+                resolve()
+              }
+              document.head.appendChild(link)
+            }),
+            getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+              const script = document.createElement('script')
+              script.src = url
+              script.async = true
+              script.onerror = reject
+              script.onload = script.onreadystatechange = function() {
+                const loadState = this.readyState
+                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                script.onload = script.onreadystatechange = null
+                resolve()
+              }
 
+              Object.keys(attr).forEach(key => {
+                script.setAttribute(key, attr[key])
+              })
 
+              document.head.appendChild(script)
+            }),
+            addGlobalFn: (key, fn, name = false, parent = window) => {
+                const globalFn = parent.globalFn || {}
+                const keyObj = globalFn[key] || {}
 
-<head>
-  <meta charset="UTF-8">
+                if (name && keyObj[name]) return
 
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/188067463.png">
-  <link rel="icon" href="/img/188067463.png">
-  
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  
-  <meta name="theme-color" content="#ffffff">
-  <meta name="author" content="ItsAyaya">
-  <meta name="keywords" content="">
-  
-    <meta name="description" content="概述（阅前必读）以下内容针对我院同学个人学习能力、学习时长、赛事难易程度、赛事预计参与人数等方面，对《2024年全国普通高校学科竞赛排行榜榜单》进行解读，对于各学科的赛事，进行资料梳理，提供相应建议与学习资料。与数据科学与大数据技术或智能体育工程专业的学习内容相差很大的学科，将排在稍后位置。同时会针对各个年级的同学，根据目前所学的内容给予相应的建议。 目前，学院对参与比赛并获奖的同学有奖励制度（详">
-<meta property="og:type" content="article">
-<meta property="og:title" content="2024年全国普通高校学科竞赛排行榜榜单解读（持续更新）">
-<meta property="og:url" content="http://sdpei-ctca.github.io/posts/fda6550/index.html">
-<meta property="og:site_name" content="山东体育学院CTCA玩机社">
-<meta property="og:description" content="概述（阅前必读）以下内容针对我院同学个人学习能力、学习时长、赛事难易程度、赛事预计参与人数等方面，对《2024年全国普通高校学科竞赛排行榜榜单》进行解读，对于各学科的赛事，进行资料梳理，提供相应建议与学习资料。与数据科学与大数据技术或智能体育工程专业的学习内容相差很大的学科，将排在稍后位置。同时会针对各个年级的同学，根据目前所学的内容给予相应的建议。 目前，学院对参与比赛并获奖的同学有奖励制度（详">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-03-18T13:33:55.308Z">
-<meta property="article:modified_time" content="2025-03-22T14:33:19.965Z">
-<meta property="article:author" content="ItsAyaya">
-<meta name="twitter:card" content="summary_large_image">
-  
-  
-    <meta name="referrer" content="no-referrer-when-downgrade">
-  
-  
-  <title>2024年全国普通高校学科竞赛排行榜榜单解读（持续更新） - 山东体育学院CTCA玩机社</title>
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
-
-
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-<!-- Do not modify the link that theme dependent icons -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
-
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"sdpei-ctca.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
-
-    if (CONFIG.web_analytics.follow_dnt) {
-      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+                name = name || Object.keys(keyObj).length
+                keyObj[name] = fn
+                globalFn[key] = keyObj
+                parent.globalFn = globalFn
+            },
+            addEventListenerPjax: (ele, event, fn, option = false) => {
+              ele.addEventListener(event, fn, option)
+              utils.addGlobalFn('pjax', () => {
+                  ele.removeEventListener(event, fn, option)
+              })
+            },
+            diffDateFormat: (selector) => {
+                selector.forEach(item => {
+                    const date = new Date(item.getAttribute('datetime') || item.textContent);
+                    item.textContent = (date.getMonth() + 1).toString()+'/'+date.getDate().toString();
+                });
+            },
+        }
+    })()</script><!-- theme--><script>initTheme = () => {
+    let isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const cachedMode = utils.saveToLocal.get('theme');
+    if (cachedMode === undefined) {
+        const nowMode =
+            isDarkMode ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', nowMode);
+    } else {
+        document.documentElement.setAttribute('data-theme', cachedMode);
     }
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-  
-
-
-  
-<meta name="generator" content="Hexo 7.3.0"></head>
-
-
-<body>
-  
-
-  <header>
-    
-
-<div class="header-inner" style="height: 70vh;">
-  <head>
-  <link rel="preload" href="/img/TLlogo.webp" as="image">
-</head>
-<nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      
-        <img src="/img/TLlogo.webp" srcset="/img/loading.gif" lazyload alt="Logo" style="height: 50px; width: auto; margin-right: 10px;">
-      
-      <strong>山东体育学院CTCA玩机社</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
-                <i class="iconfont icon-home-fill"></i>
-                <span>首页</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>归档</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
-                <i class="iconfont icon-category-fill"></i>
-                <span>分类</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
-                <i class="iconfont icon-tags-fill"></i>
-                <span>标签</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
-                <i class="iconfont icon-user-fill"></i>
-                <span>关于</span>
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              <i class="iconfont icon-search"></i>
-            </a>
-          </li>
-          
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
-              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
-            </a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-  
-
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/beijing.webp') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text="2024年全国普通高校学科竞赛排行榜榜单解读（持续更新）"></span>
-          
-        </div>
-
-        
-          
-  <div class="mt-3">
-    
-    
-      <span class="post-meta">
-        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-03-18 21:33" pubdate>
-          2025年3月18日 晚上
-        </time>
-      </span>
-    
-  </div>
-
-  <div class="mt-1">
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-chart"></i>
-        
-          9.6k 字
-        
-      </span>
-    
-
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-clock-fill"></i>
-        
-        
-        
-          81 分钟
-        
-      </span>
-    
-
-    
-    
-      
-        <span id="busuanzi_container_page_pv" style="display: none">
-          <i class="iconfont icon-eye" aria-hidden="true"></i>
-          <span id="busuanzi_value_page_pv"></span> 次
-        </span>
-        
-
-      
-    
-  </div>
-
-
-        
-      </div>
-
-      
-    </div>
-  </div>
-</div>
-
-</div>
-
-  </header>
-
-  <main>
-    
-      
-
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-
-    </div>
-
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div id="board">
-          <article class="post-content mx-auto">
-            <h1 id="seo-header">2024年全国普通高校学科竞赛排行榜榜单解读（持续更新）</h1>
-            
-              <p id="updated-time" class="note note-info" style="">
-                
-                  
-                    本文最后更新于 2025年3月22日 晚上
-                  
-                
-              </p>
-            
-            
-              <div class="markdown-body">
-                
-                <h1 id="概述（阅前必读）"><a href="#概述（阅前必读）" class="headerlink" title="概述（阅前必读）"></a>概述（阅前必读）</h1><p>以下内容针对我院同学<u>个人学习能力</u>、<u>学习时长</u>、<u>赛事难易程度</u>、<u>赛事预计参与人数</u>等方面，对《2024年全国普通高校学科竞赛排行榜榜单》进行解读，对于<u>各学科的赛事</u>，进行资料梳理，提供相应建议与学习资料。与<u>数据科学与大数据技术</u>或<u>智能体育工程</u>专业的学习内容相差很大的学科，将排在稍后位置。同时会针对各个年级的同学，根据目前所学的内容给予相应的建议。</p>
+    typeof rm === 'object' && rm.mode(cachedMode === 'dark' && isDarkMode)
+}
+initTheme()</script><script>const GLOBAL_CONFIG = {
+    root: '/',
+    algolia: undefined,
+    localsearch: undefined,
+    runtime: '2023-04-20 00:00:00',
+    lazyload: {
+        enable: false,
+        error: '/img/error_load.avif'
+    },
+    copyright: false,
+    highlight: {"limit":200,"expand":true,"copy":true,"syntax":"highlight.js"},
+    randomlink: false,
+    lang: {"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"day":"天前","hour":"小时前","just":"刚刚","min":"分钟前","month":"个月前"},"day":" 天","f12":"开发者模式已打开，请遵循GPL协议。","totalk":"无需删除空行，直接输入评论即可"},
+    aside: {
+        state: {
+            morning: "✨ 早上好，新的一天开始了",
+            noon: "🍲 午餐时间",
+            afternoon: "🌞 下午好",
+            night: "早点休息",
+            goodnight: "晚安 😴",
+        },
+        witty_words: [],
+        witty_comment: {
+            prefix: '好久不见，',
+            back: '欢迎再次回来，',
+        },
+    },
+    covercolor: {
+        enable: false
+    },
+    comment: false,
+    lightbox: 'null',
+    right_menu: false,
+    translate: {"translateDelay":0,"defaultEncoding":2},
+    lure: false,
+    expire: false,
+};</script><script id="config-diff">var PAGE_CONFIG = {
+    is_post: true,
+    is_page: false,
+    is_home: false,
+    page: '',
+    toc: true,
+    comment: false,
+    ai_text: false,
+    color: false,
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body id="body"><div id="console"><div class="close-btn" onclick="sco.hideConsole()"><i class="solitude fas fa-xmark"></i></div><div class="console-card-group"><div class="console-card-group-right"><div class="console-card tags" onclick="sco.hideConsole()"><div class="card-content"><div class="author-content-item-tips">标签</div><div class="author-content-item-title">寻找感兴趣的领域</div></div><div class="card-tag-cloud"></div></div><div class="console-card history" onclick="sco.hideConsole()"><ul class="card-archive-list"><li class="item"><a href="/archives/2025/03/"><span class="date">2025/03</span><div class="count-group"><span class="count">2</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2025/02/"><span class="date">2025/02</span><div class="count-group"><span class="count">2</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/"><span class="date">全部文章</span><div class="count-group"><span class="count">4</span><span class="unit">篇</span></div></a></li></ul></div></div></div><div class="button-group"><div class="console-btn-item"><span class="darkmode_switchbutton" onclick="sco.switchDarkMode()" title="昼夜切换"><i class="solitude fas fa-circle-half-stroke"></i></span></div><div class="console-btn-item" id="consoleHideAside"><span class="asideSwitch" onclick="sco.switchHideAside()" title="边栏显示控制"><i class="solitude fas fa-arrows-left-right-to-line"></i></span></div></div><div class="console-mask" onclick="sco.hideConsole()"></div></div><div id="sidebar" style="zoom: 1;"><div id="menu-mask" style="display: none;"></div><div id="sidebar-menus"><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a></div></div></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><span class="darkmode_switchbutton menu-child" onclick="sco.switchDarkMode()"><i class="solitude fas fa-circle-half-stroke"></i><span>显示模式</span></span></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="card-tag-cloud"></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav class="show" id="nav"><div id="nav-group"><div id="blog_name"><a href="/" title="返回博客主页" id="site-name"><span class="title">Solitude</span><i class="solitude fas fa-home"></i></a></div><div id="page-name-mask"><div id="page-name"><a id="page-name-text" onclick="sco.toTop()">2024年全国普通高校学科竞赛排行榜榜单解读（持续更新）</a></div></div><div id="menus"></div><div id="nav-left"></div><div id="nav-right"><div class="nav-button" id="nav-totop" onclick="sco.toTop()"><a class="totopbtn"><i class="solitude fas fa-arrow-up"></i><span id="percent">0</span></a></div><div id="toggle-menu"><a class="site-page"><i class="solitude fas fa-bars"></i></a></div></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original" title="该文章为原创文章，注意版权协议">原创</a><div class="tag_share"><div class="post-meta__tag-list"></div></div></div></div><h1 class="post-title">2024年全国普通高校学科竞赛排行榜榜单解读（持续更新）</h1><div id="post-meta"><div class="meta-secondline"></div></div></div><div class="post-radius-bottom"></div><article class="post-content article-container"><h1 id="概述（阅前必读）"><a href="#概述（阅前必读）" class="headerlink" title="概述（阅前必读）"></a>概述（阅前必读）</h1><p>以下内容针对我院同学<u>个人学习能力</u>、<u>学习时长</u>、<u>赛事难易程度</u>、<u>赛事预计参与人数</u>等方面，对《2024年全国普通高校学科竞赛排行榜榜单》进行解读，对于<u>各学科的赛事</u>，进行资料梳理，提供相应建议与学习资料。与<u>数据科学与大数据技术</u>或<u>智能体育工程</u>专业的学习内容相差很大的学科，将排在稍后位置。同时会针对各个年级的同学，根据目前所学的内容给予相应的建议。</p>
 <p>目前，学院对参与比赛并获奖的同学有奖励制度（详见学院文件）。同时，优秀的比赛成绩也有助于评奖评优，还请同学们一起努力，以赛促学。<strong>不要有心理压力，只要尽自己所能即可，相信自己！</strong></p>
 <p><strong>可通过导航栏一键直达比赛详情。</strong></p>
 <h1 id="一、计算机类"><a href="#一、计算机类" class="headerlink" title="一、计算机类"></a>一、计算机类</h1><h2 id="1-蓝桥杯全国软件和信息技术专业人才大赛"><a href="#1-蓝桥杯全国软件和信息技术专业人才大赛" class="headerlink" title="1.蓝桥杯全国软件和信息技术专业人才大赛"></a>1.蓝桥杯全国软件和信息技术专业人才大赛</h2><p>时间：2025年4月-6月（省赛与决赛）</p>
@@ -575,352 +420,73 @@
 <h2 id="8-ACM-ICPC国际大学生程序设计竞赛"><a href="#8-ACM-ICPC国际大学生程序设计竞赛" class="headerlink" title="8.ACM-ICPC国际大学生程序设计竞赛"></a>8.ACM-ICPC国际大学生程序设计竞赛</h2><p>官网：<a target="_blank" rel="noopener" href="https://icpc.global/">https://icpc.global/</a></p>
 <p>类型：程序算法（团队赛）</p>
 <p>简介：国际比赛，亚洲赛区。蓝桥杯升级版。适合对算法有进阶能力的同学。</p>
+</article><div class="post-copyright"><div class="post-copyright__author_group"><div class="post-copyright__author_img"><img class="post-copyright__author_img_front" src="/img/logo.png"></div><div class="post-copyright__author_name">ItsAyaya</div><div class="post-copyright__author_desc">计算机社团</div></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div id="quit-box" onclick="RemoveRewardMask()"></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本文是原创文章，采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>协议，完整转载请注明来自<a href="/">山东体育学院CTCA玩机社</a></span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__tag-list"></div></div></div><nav class="needEndHide pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/ed956dd0/"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">山东体育学院 WPS 365教育版 使用指南</div></div></a></div><div class="next-post pull-right"><a href="/posts/91950da/"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">言简意赅C语言教案（轻松学C语言）</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><div class="top-group"><div class="sayhi" id="sayhi" onclick="sco.changeWittyWord()"></div></div></div><div class="avatar"><img alt="头像" src="/img/logo.png"></div><div class="description"></div><div class="bottom-group"><span class="left"><div class="name">ItsAyaya</div><div class="desc">只有迎风，风筝才能飞得更高。</div></span><div class="social-icons is-center"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="solitude fas fa-bars"></i><span>文章目录</span></div><div class="toc-content" id="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0%EF%BC%88%E9%98%85%E5%89%8D%E5%BF%85%E8%AF%BB%EF%BC%89"><span class="toc-text">概述（阅前必读）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B1%BB"><span class="toc-text">一、计算机类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%85%A8%E5%9B%BD%E8%BD%AF%E4%BB%B6%E5%92%8C%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E4%B8%93%E4%B8%9A%E4%BA%BA%E6%89%8D%E5%A4%A7%E8%B5%9B"><span class="toc-text">1.蓝桥杯全国软件和信息技术专业人才大赛</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A0%E4%B8%AA%E4%BA%BA%E8%B5%9B"><span class="toc-text">①个人赛</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A1%E8%A7%86%E8%A7%89%E8%89%BA%E6%9C%AF%E8%AE%BE%E8%AE%A1%E8%B5%9B"><span class="toc-text">②视觉艺术设计赛</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A2%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E8%B5%9B"><span class="toc-text">③项目实战赛</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A3%E6%95%B0%E5%AD%97%E7%A7%91%E6%8A%80%E5%88%9B%E6%96%B0%E8%B5%9B"><span class="toc-text">④数字科技创新赛</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E4%B8%AD%E5%9B%BD%E9%AB%98%E6%A0%A1%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%A4%A7%E8%B5%9B%EF%BC%88C4%E8%B5%9B%E4%BA%8B%EF%BC%89"><span class="toc-text">2.中国高校计算机大赛（C4赛事）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A0%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8C%91%E6%88%98%E8%B5%9B"><span class="toc-text">①大数据挑战赛</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A1%E5%9B%A2%E4%BD%93%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A9%E6%A2%AF%E8%B5%9B"><span class="toc-text">②团体程序设计天梯赛</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A2%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%88%9B%E6%96%B0%E8%B5%9B"><span class="toc-text">③移动应用创新赛</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A3%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF%E6%8C%91%E6%88%98%E8%B5%9B"><span class="toc-text">④网络技术挑战赛</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A4%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%88%9B%E6%84%8F%E8%B5%9B"><span class="toc-text">⑤人工智能创意赛</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AE%BE%E8%AE%A1%E5%A4%A7%E8%B5%9B"><span class="toc-text">3.中国大学生计算机设计大赛</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A0%E4%B8%8A%E6%B5%B7%E8%B5%9B%E5%8C%BA%EF%BC%88%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8-%E6%95%B0%E5%AA%92%E6%B8%B8%E6%88%8F%E4%B8%8E%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1-%E5%9B%BD%E9%99%85%E7%94%9F%E2%80%9C%E6%B1%89%E5%AD%A6%E2%80%9D%EF%BC%89"><span class="toc-text">①上海赛区（大数据应用&#x2F;数媒游戏与交互设计&#x2F;国际生“汉学”）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A1%E5%8D%97%E4%BA%AC%E5%8D%97%E8%B5%9B%E5%8C%BA%EF%BC%88%E5%BE%AE%E8%AF%BE%E4%B8%8EAI%E8%BE%85%E5%8A%A9%E6%95%99%E5%AD%A6-%E6%95%B0%E5%AA%92%E9%9D%99%E6%80%81%E8%AE%BE%E8%AE%A1%EF%BC%89"><span class="toc-text">②南京南赛区（微课与AI辅助教学&#x2F;数媒静态设计）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A2%E6%B5%8E%E5%8D%97%E8%B5%9B%E5%8C%BA%EF%BC%88%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%EF%BC%89"><span class="toc-text">③济南赛区（软件应用与开发）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A3%E6%9D%AD%E5%B7%9E%E8%B5%9B%E5%8C%BA%EF%BC%88%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8-%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96%E8%AE%BE%E8%AE%A1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%9F%B3%E4%B9%90%E5%88%9B%E4%BD%9C%EF%BC%89"><span class="toc-text">④杭州赛区（物联网应用&#x2F;信息可视化设计&#x2F;计算机音乐创作）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A4%E5%8D%97%E4%BA%AC%E4%B8%9C%E8%B5%9B%E5%8C%BA%EF%BC%88%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BA%94%E7%94%A8-%E6%95%B0%E5%AA%92%E5%8A%A8%E6%BC%AB%E4%B8%8E%E7%9F%AD%E7%89%87%EF%BC%89"><span class="toc-text">⑤南京东赛区（人工智能应用&#x2F;数媒动漫与短片）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E8%83%BD%E5%8A%9B%E5%A4%A7%E8%B5%9B"><span class="toc-text">4.全国大学生计算机系统能力大赛</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E8%B5%9B-%E5%85%A8%E5%9B%BD-OS%E5%86%85%E6%A0%B8%E5%AE%9E%E7%8E%B0%E8%B5%9B%E9%81%93"><span class="toc-text">1.操作系统设计赛(全国)-OS内核实现赛道</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E8%B5%9B-%E5%85%A8%E5%9B%BD-OS%E5%8A%9F%E8%83%BD%E6%8C%91%E6%88%98%E8%B5%9B%E9%81%93"><span class="toc-text">2.操作系统设计赛(全国)-OS功能挑战赛道</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%99%BA%E8%83%BD%E7%B3%BB%E7%BB%9F%E5%88%9B%E6%96%B0%E8%AE%BE%E8%AE%A1%E8%B5%9B%EF%BC%88%E5%B0%8F%E7%B1%B3%E6%9D%AF%EF%BC%89"><span class="toc-text">3.智能系统创新设计赛（小米杯）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E7%99%BE%E5%BA%A6%E4%B9%8B%E6%98%9F%C2%B7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A7%E8%B5%9B"><span class="toc-text">5.百度之星·程序设计大赛</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E5%85%A8%E7%90%83%E6%A0%A1%E5%9B%AD%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95%E7%B2%BE%E8%8B%B1%E5%A4%A7%E8%B5%9B"><span class="toc-text">6.全球校园人工智能算法精英大赛</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E7%AE%97%E6%B3%95%E6%8C%91%E6%88%98%E8%B5%9B%EF%BC%88%E8%B5%9B%E9%A2%98%E8%A7%84%E5%88%995%E6%9C%8822%E6%97%A5%E5%85%AC%E5%B8%83%EF%BC%89"><span class="toc-text">（一）算法挑战赛（赛题规则5月22日公布）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E7%AE%97%E6%B3%95%E5%88%9B%E6%96%B0%E8%B5%9B%EF%BC%88%E8%B5%9B%E9%A2%98%E8%A7%84%E5%88%995%E6%9C%8822%E6%97%A5%E5%85%AC%E5%B8%83%EF%BC%89"><span class="toc-text">（二）算法创新赛（赛题规则5月22日公布）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E7%AE%97%E6%B3%95%E5%BA%94%E7%94%A8%E8%B5%9B%EF%BC%88%E7%82%B9%E5%87%BB%E4%B8%8B%E5%88%97%E8%B5%9B%E9%A1%B9%E5%90%8D%E7%A7%B0%EF%BC%8C%E6%9F%A5%E7%9C%8B%E8%B5%9B%E9%A1%B9%E8%A7%84%E5%88%99%E5%85%B7%E4%BD%93%E5%86%85%E5%AE%B9%EF%BC%89"><span class="toc-text">（三）算法应用赛（点击下列赛项名称，查看赛项规则具体内容）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E7%AE%97%E6%B3%95%E7%B2%BE%E8%8B%B1%E8%B5%9B"><span class="toc-text">（四）算法精英赛</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89%E7%AE%97%E6%B3%95%E4%B8%93%E9%A1%B9%E8%B5%9B"><span class="toc-text">（五）算法专项赛</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E2%80%9C%E4%B8%AD%E5%9B%BD%E8%BD%AF%E4%BB%B6%E6%9D%AF%E2%80%9D%E5%A4%A7%E5%AD%A6%E7%94%9F%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%A4%A7%E8%B5%9B"><span class="toc-text">7.“中国软件杯”大学生软件设计大赛</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-ACM-ICPC%E5%9B%BD%E9%99%85%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B"><span class="toc-text">8.ACM-ICPC国际大学生程序设计竞赛</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="solitude fas fa-map"></i><span>最近发布</span></div><div class="aside-list"><a class="aside-list-item" href="/posts/ed956dd0/" title="山东体育学院 WPS 365教育版 使用指南"><div class="content"><span class="title" href="/posts/ed956dd0/" title="山东体育学院 WPS 365教育版 使用指南">山东体育学院 WPS 365教育版 使用指南</span></div></a><a class="aside-list-item" href="/posts/fda6550/" title="2024年全国普通高校学科竞赛排行榜榜单解读（持续更新）"><div class="content"><span class="title" href="/posts/fda6550/" title="2024年全国普通高校学科竞赛排行榜榜单解读（持续更新）">2024年全国普通高校学科竞赛排行榜榜单解读（持续更新）</span></div></a><a class="aside-list-item" href="/posts/91950da/" title="言简意赅C语言教案（轻松学C语言）"><div class="content"><span class="title" href="/posts/91950da/" title="言简意赅C语言教案（轻松学C语言）">言简意赅C语言教案（轻松学C语言）</span></div></a><a class="aside-list-item" href="/posts/2c841c57/" title="欢迎来到玩机社"><div class="content"><span class="title" href="/posts/2c841c57/" title="欢迎来到玩机社">欢迎来到玩机社</span></div></a></div></div></div></div></main><footer id="footer"><div id="st-footer"></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div class="copyright">© 2023 - 2025 By<a class="footer-bar-link" href="/" title="ItsAyaya">ItsAyaya</a></div><div class="beian-group"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://hexo.io/" title="框架：Hexo">框架：Hexo</a><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/everfu/hexo-theme-solitude" title="主题：Solitude">主题：Solitude</a></div></div><div class="footer-bar-right"></div></div></div><div class="comment-barrage needEndHide"></div></footer></div><div><!-- Critical scripts loaded synchronously--><script src="/js/utils.js?v=3.0.21"></script><script src="/js/main.js?v=3.0.21"></script><!-- Non-critical scripts loaded asynchronously--><script async src="/js/third_party/waterfall.min.js?v=3.0.21"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><!-- Feature-specific scripts loaded asynchronously--><script defer src="/js/tw_cn.js?v=3.0.21"></script><!-- UI enhancement scripts--><script defer src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><!-- Music player scripts--><!-- Cover color processing scripts--><script>window.paceOptions = {
+  restartOnPushState: false
+}
 
-                
-              </div>
-            
-            <hr/>
-            <div>
-              <div class="post-metas my-3">
-  
-  
-</div>
+utils.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+</script><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!-- Search functionality--><!-- Right menu functionality--><div class="js-pjax"></div></div><!-- pjax--><script>let pjax = null;
 
-
-              
-  
-
-  <div class="license-box my-3">
-    <div class="license-title">
-      <div>2024年全国普通高校学科竞赛排行榜榜单解读（持续更新）</div>
-      <div>http://sdpei-ctca.github.io/posts/fda6550/</div>
-    </div>
-    <div class="license-meta">
-      
-        <div class="license-meta-item">
-          <div>作者</div>
-          <div>ItsAyaya</div>
-        </div>
-      
-      
-        <div class="license-meta-item license-meta-date">
-          <div>发布于</div>
-          <div>2025年3月18日</div>
-        </div>
-      
-      
-        <div class="license-meta-item license-meta-date">
-          <div>更新于</div>
-          <div>2025年3月22日</div>
-        </div>
-      
-      
-        <div class="license-meta-item">
-          <div>许可协议</div>
-          <div>
-            
-              
-              
-                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
-                    <i class="iconfont icon-cc-by"></i>
-                  </span>
-                </a>
-              
-            
-          </div>
-        </div>
-      
-    </div>
-    <div class="license-icon iconfont"></div>
-  </div>
-
-
-
-              
-                <div class="post-prevnext my-3">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/posts/ed956dd0/" title="山东体育学院 WPS 365教育版 使用指南">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">山东体育学院 WPS 365教育版 使用指南</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/posts/91950da/" title="言简意赅C语言教案（轻松学C语言）">
-                        <span class="hidden-mobile">言简意赅C语言教案（轻松学C语言）</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
-              
-            </div>
-
-            
-          </article>
-        </div>
-      </div>
-    </div>
-
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-  <aside class="sidebar" style="margin-left: -1rem">
-    <div id="toc">
-  <p class="toc-header">
-    <i class="iconfont icon-list"></i>
-    <span>目录</span>
-  </p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-
-
-  </aside>
-
-
-    </div>
-  </div>
-</div>
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-    
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-
-    
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-  
-    <div class="footer-content">
-       <i class="iconfont icon-github-fill"></i> <a href="https://github.com/Sdpei-CTCA" target="_blank" rel="nofollow noopener"><span>Sdpei-CTCA</span></a> <br> <span>社团地址:山东体育学院 济南校区 一号教学楼 1615</span>  <br> <span>校内链接:</span> <a href="https://www.sdpei.edu.cn" target="_blank" rel="nofollow noopener"><span>山东体育学院 </span></a> <a href="https://cmxy.sdpei.edu.cn" target="_blank" rel="nofollow noopener"><span>体育传媒与信息技术学院 </span></a> <a href="https://nic.sdpei.edu.cn" target="_blank" rel="nofollow noopener"><span>网络信息中心 </span></a> <a href="https://ms.sdpei.edu.cn/" target="_blank" rel="nofollow noopener"><span>山体正版软件平台 </span></a> <br> <i class="iconfont icon-love"></i> <span>由</span> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <span>与</span> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <span>强力驱动</span>
-
-    </div>
-  
-  
-  
-</div>
-
-  </footer>
-
-  <!-- Scripts -->
-  
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
+function initPjax() {
+    if (typeof Pjax === 'undefined') {
+        console.warn('Pjax is not loaded yet, retrying...');
+        setTimeout(initPjax, 100);
         return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
-
-
-
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
-
-
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
-    var toc = jQuery('#toc');
-    if (toc.length === 0 || !window.tocbot) { return; }
-    var boardCtn = jQuery('#board-ctn');
-    var boardTop = boardCtn.offset().top;
-
-    window.tocbot.init(Object.assign({
-      tocSelector     : '#toc-body',
-      contentSelector : '.markdown-body',
-      linkClass       : 'tocbot-link',
-      activeLinkClass : 'tocbot-active-link',
-      listClass       : 'tocbot-list',
-      isCollapsedClass: 'tocbot-is-collapsed',
-      collapsibleClass: 'tocbot-is-collapsible',
-      scrollSmooth    : true,
-      includeTitleTags: true,
-      headingsOffset  : -boardTop,
-    }, CONFIG.toc));
-    if (toc.find('.toc-list-item').length > 0) {
-      toc.css('visibility', 'visible');
     }
 
-    Fluid.events.registerRefreshCallback(function() {
-      if ('tocbot' in window) {
-        tocbot.refresh();
-        var toc = jQuery('#toc');
-        if (toc.length === 0 || !tocbot) {
-          return;
+    pjax = new Pjax({
+        elements: 'a:not([target="_blank"])',
+        selectors: ["title","#body-wrap","#site-config","meta[name=\"description\"]",".js-pjax","meta[property^=\"og:\"]","#config-diff",".rs_show",".rs_hide"],
+        cacheBust: false,
+        analytics: false,
+        scrollRestoration: false
+    })
+
+    // 将 pjax 实例挂载到全局
+    window.pjax = pjax;
+
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+        const newScript = document.createElement('script')
+        const content = item.text || item.textContent || item.innerHTML || ""
+        Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+        newScript.appendChild(document.createTextNode(content))
+        item.parentNode.replaceChild(newScript, item)
+    })
+
+    document.addEventListener('pjax:complete', () => {
+        window.refreshFn()
+
+        document.querySelectorAll('script[data-pjax]').forEach(item => {
+            const newScript = document.createElement('script')
+            const content = item.text || item.textContent || item.innerHTML || ""
+            Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+            newScript.appendChild(document.createTextNode(content))
+            item.parentNode.replaceChild(newScript, item)
+        })
+
+        GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+    })
+
+    document.addEventListener('pjax:error', (e) => {
+        if (e.request.status === 404) {
+            pjax.loadUrl('/404.html')
         }
-        if (toc.find('.toc-list-item').length > 0) {
-          toc.css('visibility', 'visible');
-        }
-      }
-    });
-  });
-</script>
+    })
+}
 
-
-  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
-
-  <script>Fluid.plugins.codeWidget();</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
-    window.anchors.options = {
-      placement: CONFIG.anchorjs.placement,
-      visible  : CONFIG.anchorjs.visible
-    };
-    if (CONFIG.anchorjs.icon) {
-      window.anchors.options.icon = CONFIG.anchorjs.icon;
-    }
-    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-    var res = [];
-    for (var item of el) {
-      res.push('.markdown-body > ' + item.trim());
-    }
-    if (CONFIG.anchorjs.placement === 'left') {
-      window.anchors.options.class = 'anchorjs-link-left';
-    }
-    window.anchors.add(res.join(', '));
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('anchors' in window) {
-        anchors.removeAll();
-        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-        var res = [];
-        for (var item of el) {
-          res.push('.markdown-body > ' + item.trim());
-        }
-        if (CONFIG.anchorjs.placement === 'left') {
-          anchors.options.class = 'anchorjs-link-left';
-        }
-        anchors.add(res.join(', '));
-      }
-    });
-  });
-</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
-    Fluid.plugins.fancyBox();
-  });
-</script>
-
-
-  <script>Fluid.plugins.imageCaption();</script>
-
-  <script  src="/js/local-search.js" ></script>
-
-  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
-
-
-
-
-
-<!-- 主题的启动项，将它保持在最底部 -->
-<!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
-
-
-  
-
-  <noscript>
-    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
-  </noscript>
-</body>
-</html>
+// 初始化 Pjax
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPjax);
+} else {
+    initPjax();
+}</script><!-- google adsense--></body></html>
+        <script>
+            const posts = ["posts/ed956dd0/","posts/fda6550/","posts/91950da/","posts/2c841c57/"];
+            function toRandomPost() {
+                const randomPost = posts[Math.floor(Math.random() * posts.length)];
+                pjax.loadUrl(GLOBAL_CONFIG.root + randomPost);
+            }
+        </script>
