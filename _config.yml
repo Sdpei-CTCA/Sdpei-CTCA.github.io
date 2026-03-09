@@ -111,3 +111,16 @@ abbrlink:
   drafts: false   # Whether to generate abbrlink for drafts. (false in default)
   force: false    # Enable force mode. In this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had an abbrlink. (false in default)
   writeback: true # Whether to write changes to front-matters back to the actual markdown files. (true in default)
+# HTML CSS JS 图片资源压缩
+filter_minify:
+  html:
+    enable: true
+    exclude: ''
+  css:
+    enable: true
+    exclude: '*.min.css'
+  js:
+    enable: true
+    exclude: '*.min.js'
+  image:
+    enable: false # 免费版不推荐压缩图片，太耗 GitHub Actions 时间
