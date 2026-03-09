@@ -4,26 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>教务小助手 | 山体玩机社</title>
-    <!-- 引入 Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- 定制 Tailwind 配合深色现代极客风 -->
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#3b82f6',
-                        darkBg: '#0b1121',
-                        cardBg: '#151e32'
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- 使用预编译的极速静态 CSS 替代慢速的 CDN 编译器 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 预加载关键图片资源加速首屏显示 -->
+    <link rel="preload" as="image" href="image/logo.png">
+    <link rel="preload" as="image" href="image/260E190E4A311801A2C81A1ABF72A5A0.png">
     <style>
         .text-gradient {
             background-clip: text;
@@ -56,8 +41,8 @@
     <header class="fixed top-0 w-full z-50 bg-darkBg/80 backdrop-blur-md border-b border-white/10 transition-all">
         <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <!-- Logo -->
-                <img src="image/logo.png" alt="教务小助手 Logo" class="w-10 h-10 rounded-xl shadow-lg border border-white/10 p-0.5 bg-white/5 object-cover">
+                <!-- Logo 添加 fetchpriority 和解码异步优化 -->
+                <img src="image/logo.png" alt="教务小助手 Logo" fetchpriority="high" decoding="async" class="w-10 h-10 rounded-xl shadow-lg border border-white/10 p-0.5 bg-white/5 object-cover">
                 <span class="text-xl font-bold tracking-wide">教务小助手</span>
             </div>
             <a href="/" class="text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200 flex items-center gap-1">
@@ -77,7 +62,7 @@
                     专为山东体育学院学子打造
                 </div>
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
-                    你的私人教务管家<br/>
+                    更轻松的教务信息查看<br/>
                     <span class="text-gradient">让校园生活更简单。</span>
                 </h1>
                 <p class="text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0">
@@ -85,7 +70,7 @@
                 </p>
                 
                 <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-                    <a href="https://github.com/Sdpei-CTCA/JWHelper/releases" target="_blank" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center justify-center gap-2">
+                    <a href="https://hk.gh-proxy.org/https://github.com/Sdpei-CTCA/JWHelper/releases/download/Version_1.2.1/app-arm64-v8a-release.apk" target="_blank" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center justify-center gap-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                         下载 Android 版
                     </a>
@@ -101,8 +86,8 @@
             <div class="w-full lg:w-1/2 flex justify-center relative z-10">
                 <div class="relative w-[280px] h-[580px] rounded-[3rem] border-[10px] border-slate-900 bg-slate-900 mockup-container overflow-hidden">
                     <div class="absolute top-0 inset-x-0 h-6 bg-slate-900 z-20 rounded-b-2xl w-32 mx-auto"></div>
-                    <!-- 使用其中的一张截图作为展示效果，如果路径错误会有后备背景色和文字 -->
-                    <img src="image/260E190E4A311801A2C81A1ABF72A5A0.png" alt="App Screenshot" class="w-full h-full object-cover bg-slate-800" onerror="this.outerHTML='<div class=\'w-full h-full bg-slate-800 flex items-center justify-center text-slate-500\'>APP 预览图</div>'">
+                    <!-- 核心截图：开启高优先级并取消延迟 -->
+                    <img src="image/IMG_8709.png" alt="App Screenshot" fetchpriority="high" decoding="async" class="w-full h-full object-cover bg-slate-800" onerror="this.outerHTML='<div class=\'w-full h-full bg-slate-800 flex items-center justify-center text-slate-500\'>APP 预览图</div>'">
                 </div>
             </div>
         </section>
@@ -144,7 +129,7 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-3">离线缓存与小组件</h3>
                     <p class="text-slate-400 leading-relaxed text-sm">
-                        网络不佳也能畅通无阻，智能离线缓存设计保留最近数据。更有 iOS 与 Android 原生桌面小组件加持，核心概览桌面上抬眼即见。
+                        网络不佳也能畅通无阻，智能离线缓存设计保留最近数据。更有Android 原生桌面小组件加持，核心概览桌面上抬眼即见。
                     </p>
                 </div>
             </div>
