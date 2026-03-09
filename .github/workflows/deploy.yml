@@ -1,0 +1,42 @@
+name: Deploy Hexo
+
+on:
+  push:
+    branches:
+      - source # 监听 source 分支的提交。当你把源码 push 到 source 分支时触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source # 检出源码
+        uses: actions/checkout@v4
+        with:
+          ref: source # 指定检出 source 分支
+
+      - name: Setup Node.js # 设置 Node.js 环境
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # 使用较新的 Node 版本
+
+      - name: Cache dependencies # 缓存 node_modules 提升后续部署速度
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies # 安装依赖
+        run: npm ci # 使用 ci 更稳定，如果报错可以改回 npm install
+
+      - name: Build Hexo # 生成静态文件
+        run: npm run build # 需要在 package.json 中配置 build 脚本，或者直接用 npx hexo clean && npx hexo generate
+
+      - name: Deploy to GitHub Pages # 部署到 main 分支展示
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public # 部署的目录：Hexo 默认生成的 public 文件夹
+          publish_branch: main  # 推送到 main 分支 (供 GitHub Pages 访问)
+          commit_message: "docs: auto deploy from actions" # 自动提交的注释
