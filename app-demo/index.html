@@ -84,10 +84,15 @@
 
             <!-- 右侧设备演示 -->
             <div class="w-full lg:w-1/2 flex justify-center relative z-10">
-                <div class="relative w-[340px] h-[720px] shadow-2xl rounded-[3.5rem] border-[10px] border-slate-900 bg-slate-900 mockup-container overflow-hidden">
+                <!-- 手机外壳容器 -->
+                <div class="relative w-[340px] h-[720px] shadow-2xl rounded-[3.5rem] border-[12px] border-slate-900 bg-slate-900 mockup-container overflow-hidden">
+                    <!-- 顶部刘海/灵动岛 -->
                     <div class="absolute top-0 inset-x-0 h-7 bg-slate-900 z-20 rounded-b-3xl w-40 mx-auto"></div>
-                    <!-- 核心截图：开启高优先级并取消延迟 -->
-                    <img src="image/IMG_8709.PNG" alt="App Screenshot" fetchpriority="high" decoding="async" class="w-full h-full object-cover bg-slate-800" onerror="this.outerHTML='<div class=\'w-full h-full bg-slate-800 flex items-center justify-center text-slate-500\'>APP 预览图</div>'">
+                    <!-- 屏幕内边距和图片裁切区 -->
+                    <div class="w-full h-full rounded-[2.5rem] overflow-hidden bg-slate-800 absolute inset-0 left-0 top-0">
+                        <!-- 核心截图：开启高优先级并取消延迟，同时添加 object-cover 确保填充不溢出 -->
+                        <img src="image/IMG_8709.PNG" alt="App Screenshot" fetchpriority="high" decoding="async" class="w-full h-full object-cover" onerror="this.outerHTML='<div class=\'w-full h-full bg-slate-800 flex items-center justify-center text-slate-500\'>APP 预览图</div>'">
+                    </div>
                 </div>
             </div>
         </section>
